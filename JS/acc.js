@@ -6,12 +6,10 @@ for(i = 0; i < len; i++) {
     acc[i].addEventListener(`click`,function() {
         this.classList.toggle(`active`);
         var nav_mobile_item = this.nextElementSibling;
-        if(nav_mobile_item.style.maxHeight) {
-            nav_mobile_item.style.maxHeight = null;
-
-        } else {
-            nav_mobile_item.style.maxHeight = nav_mobile_item.scrollHeight + `px`
-        }
+        nav_mobile_item.style.maxHeight 
+       ? nav_mobile_item.style.maxHeight = null
+    : nav_mobile_item.style.maxHeight = nav_mobile_item.scrollHeight + `px`
+        
     })
 }
 
@@ -38,11 +36,9 @@ for(i = 0; i < len; i++) {
     acc[i].addEventListener(`click`,function() {
         this.classList.toggle(`active`);
         var panel = this.nextElementSibling;
-        if(panel.style.maxHeight) {
-            panel.style.maxHeight = null;
-
-        } else {
-            panel.style.maxHeight = panel.scrollHeight + `px`
-        }
+    panel.style.maxHeighr 
+    ? panel.style.maxHeight = null 
+    : panel.style.maxHeight = panel.scrollHeight + `px`
+        
     })
 }
